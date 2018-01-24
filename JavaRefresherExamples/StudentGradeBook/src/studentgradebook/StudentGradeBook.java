@@ -5,7 +5,6 @@
  */
 package studentgradebook;
 
-import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -14,9 +13,9 @@ import java.util.Scanner;
  */
 public class StudentGradeBook {
 
-    /**
-     * @param args the command line arguments
-     */
+	static Scanner in = new Scanner(System.in);
+	
+	
     public static void main(String[] args) {
         
         
@@ -29,11 +28,12 @@ public class StudentGradeBook {
         Student stud2 = new Student("Ford Prefect");
         incorrectlyMakeStudent(stud2);
         displayStudent(stud2);
+        
+        in.close();
                         
     }
     
     public static void correctlyMakeStudent(Student s) {
-        Scanner in = new Scanner(System.in);
         
         if(s.getName().isEmpty()) {
             System.out.print("Enter the name of the student: ");
@@ -49,12 +49,10 @@ public class StudentGradeBook {
             grade = in.nextDouble();
         }
                 
-        //in.close();
     }
     
     public static void incorrectlyMakeStudent(Student s) {
         s = new Student();
-        Scanner in = new Scanner(System.in);
         if(s.getName().isEmpty()) {
             System.out.print("Enter the name of the student: ");
             s.setName(in.nextLine());
@@ -69,7 +67,6 @@ public class StudentGradeBook {
             grade = in.nextDouble();
         }
                 
-        in.close();
     }
     
     public static void displayStudent(Student s) {
