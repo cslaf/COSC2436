@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="JavaRefresherExamples/ArrayDemo/src"/>
+	<classpathentry kind="src" path="JavaRefresherExamples/GradeBook/src"/>
+	<classpathentry kind="src" path="JavaRefresherExamples/StudentGradeBook/src"/>
+	<classpathentry kind="src" path="JavaRefresherExamples/TempConvert/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
