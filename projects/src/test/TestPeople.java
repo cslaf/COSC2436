@@ -8,6 +8,7 @@ public class TestPeople {
 
 	public static void main(String[] args) {
 		
+		
 		ArrayList<Person> people = new ArrayList<>();
 		
 		// Create our peeps
@@ -39,7 +40,7 @@ public class TestPeople {
 				System.out.println(p.getEmail());
 			}
 		}
-
+		 
 	}
 
 }
